@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D9F44EC1FFAC7BC003C4ED2 /* MicrosoftAzureMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D9F44EB1FFAC7BB003C4ED2 /* MicrosoftAzureMobile.framework */; };
+		8DDEC6621EBF4B1000C5BDE4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDEC6611EBF4B1000C5BDE4 /* SearchViewController.swift */; };
 		9C35A4B41DE4EF8000650581 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C35A4B31DE4EF8000650581 /* SafariServices.framework */; };
 		9C35A4B61DE4EF8500650581 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C35A4B51DE4EF8500650581 /* Security.framework */; };
 		9CA121761DAC7FFD000C2FCA /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA121751DAC7FFD000C2FCA /* WebKit.framework */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D9F44EB1FFAC7BB003C4ED2 /* MicrosoftAzureMobile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MicrosoftAzureMobile.framework; path = woguraMobileApp/MicrosoftAzureMobile.framework; sourceTree = "<group>"; };
+		8DDEC6611EBF4B1000C5BDE4 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		9C35A4B31DE4EF8000650581 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		9C35A4B51DE4EF8500650581 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		9CA121751DAC7FFD000C2FCA /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -42,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D9F44EC1FFAC7BC003C4ED2 /* MicrosoftAzureMobile.framework in Frameworks */,
 				9C35A4B61DE4EF8500650581 /* Security.framework in Frameworks */,
 				9C35A4B41DE4EF8000650581 /* SafariServices.framework in Frameworks */,
 				9CA121761DAC7FFD000C2FCA /* WebKit.framework in Frameworks */,
@@ -88,6 +93,7 @@
 				A2D9CBCD1943C2540017F096 /* Images.xcassets */,
 				A2D9CBC11943C2540017F096 /* Supporting Files */,
 				A2D9CBE31943C39D0017F096 /* ToDoTableViewController.swift */,
+				8DDEC6611EBF4B1000C5BDE4 /* SearchViewController.swift */,
 				A2E767C5194594DC00869113 /* ToDoItemViewController.swift */,
 				A2D9CBE51943CB520017F096 /* frameworks */,
 				A2D9CBE81943D1340017F096 /* woguraMobileApp-Bridging-Header.h */,
@@ -107,6 +113,7 @@
 		A2D9CBE51943CB520017F096 /* frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8D9F44EB1FFAC7BB003C4ED2 /* MicrosoftAzureMobile.framework */,
 				A3BBD77C1C05181600DD0DB0 /* MicrosoftAzureMobile.framework */,
 			);
 			name = frameworks;
@@ -146,6 +153,7 @@
 				TargetAttributes = {
 					A2D9CBBD1943C2540017F096 = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = TG434Y362J;
 						LastSwiftMigration = 0820;
 					};
 				};
@@ -186,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DDEC6621EBF4B1000C5BDE4 /* SearchViewController.swift in Sources */,
 				A2E767C6194594DC00869113 /* ToDoItemViewController.swift in Sources */,
 				A2BD20971AC8A731007F7181 /* QSTodoDataModel.xcdatamodeld in Sources */,
 				A2D9CBE41943C39D0017F096 /* ToDoTableViewController.swift in Sources */,
@@ -302,9 +311,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = TG434Y362J;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/woguraMobileApp",
 				);
 				INFOPLIST_FILE = woguraMobileApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -322,9 +333,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = TG434Y362J;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/woguraMobileApp",
 				);
 				INFOPLIST_FILE = woguraMobileApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
